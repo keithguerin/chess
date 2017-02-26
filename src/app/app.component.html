@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<div class='board'>
+  <div class='row' *ngFor='let row of board.rows'>
+    <div class='square' *ngFor='let square of row'>
+      <span class='id'>{{square}}</span>
+    </div>
+  </div>
+</div>
+<div *ngFor='let piece of pieces'>
+  piece {{piece.id}}
+</div>

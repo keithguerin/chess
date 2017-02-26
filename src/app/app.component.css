@@ -1,0 +1,47 @@
+:host {
+  display: block;
+  background: white;
+}
+
+h1 {
+  display: none;
+}
+
+.board {
+  /*border: 1px solid #ccc;*/
+  display: inline-block;
+}
+.row {
+  /*border: 1px solid grey;*/
+  line-height: 0;
+}
+.row:nth-child(odd) .square:nth-child(odd) {
+  background: #ddd;
+}
+.row:nth-child(even) .square:nth-child(even) {
+  background: #ddd;
+}
+.square {
+  /*border: 1px solid red;*/
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: #eee;
+  position: relative;
+  line-height: initial;
+}
+.square .id {
+  display: block;
+  color: #bbb;
+  font-family: sans-serif;
+  font-size: 15px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.piece {
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
+  border-radius: 100%;
+}
